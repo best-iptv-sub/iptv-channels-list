@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://best-iptv-sub.github.io/iptv-channels-list/sitemap.xml

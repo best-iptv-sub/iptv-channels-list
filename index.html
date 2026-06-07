@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPTV Channels List 2026 - 150,000+ Live Channels Worldwide | StreamElite</title>
+  <meta name="description" content="Complete IPTV channels list with 150,000+ live channels across 100+ countries. Browse USA, UK, France, Germany, India, Latin America, and more. Updated for 2026.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://best-iptv-sub.github.io/iptv-channels-list/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { manrope: ['Manrope', 'sans-serif'] },
+          colors: { red: { 600: '#ef233c', 700: '#c81d33' } }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { font-family: 'Manrope', sans-serif; }
+    body { background-color: #09090b; }
+    .accent { color: #ef233c; }
+    .btn-primary {
+      background: #ef233c;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.02em;
+      transition: background 0.2s, transform 0.1s;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .btn-primary:hover { background: #c81d33; transform: translateY(-1px); }
+    .card {
+      background: rgba(24,24,27,0.8);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      backdrop-filter: blur(12px);
+    }
+    .gradient-text {
+      background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,0.6) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .section-label {
+      display: inline-block;
+      background: rgba(239,35,60,0.1);
+      border: 1px solid rgba(239,35,60,0.25);
+      color: #ef233c;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 100px;
+    }
+    .region-btn {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 14px 20px;
+      color: rgba(255,255,255,0.8);
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.2s;
+      cursor: pointer;
+      text-align: center;
+    }
+    .region-btn:hover, .region-btn.active { border-color: #ef233c; background: rgba(239,35,60,0.1); color: #fff; }
+    .accordion-item { border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .accordion-header {
+      padding: 16px 20px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgba(255,255,255,0.9);
+      font-weight: 600;
+      font-size: 15px;
+      transition: background 0.2s;
+      user-select: none;
+    }
+    .accordion-header:hover { background: rgba(255,255,255,0.03); }
+    .accordion-header .icon { transition: transform 0.3s; font-size: 12px; color: rgba(255,255,255,0.4); }
+    .accordion-item.open .accordion-header .icon { transform: rotate(180deg); }
+    .accordion-body { display: none; padding: 4px 20px 16px; }
+    .accordion-item.open .accordion-body { display: block; }
+    .channel-list { columns: 3 220px; column-gap: 12px; }
+    .channel-list li {
+      padding: 5px 10px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.65);
+      border-radius: 4px;
+      transition: background 0.15s;
+      break-inside: avoid;
+      list-style: none;
+    }
+    .channel-list li:hover { background: rgba(255,255,255,0.04); color: rgba(255,255,255,0.9); }
+    .channel-sub { font-weight: 700; color: #ef233c; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; padding: 10px 10px 4px; break-inside: avoid; list-style: none; }
+    .region-section { display: none; }
+    .region-section.active { display: block; }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #25D366;
+      color: white;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      transition: transform 0.2s;
+      z-index: 50;
+    }
+    .whatsapp-float:hover { transform: scale(1.1); }
+    .search-input {
+      width: 100%;
+      padding: 14px 20px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      color: white;
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .search-input:focus { border-color: #ef233c; }
+    .search-input::placeholder { color: rgba(255,255,255,0.3); }
+    .count-badge {
+      background: rgba(239,35,60,0.15);
+      color: #ef233c;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 20px;
+    }
+    @media (max-width: 768px) { .channel-list { columns: 2 160px; } }
+  </style>
+</head>
+<body>
+<nav class="border-b border-white/5" style="background:#09090b;">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <span class="text-white font-extrabold text-lg tracking-tight">Stream<span class="accent">Elite</span></span>
+    <a href="https://wa.me/447488842848?text=Hi%20StreamElite%20-%20I'm%20interested%20in%20your%20IPTV%20service" target="_blank" rel="noopener" class="text-white/60 hover:text-white text-sm font-medium transition">Contact</a>
+  </div>
+</nav>
+<section class="max-w-7xl mx-auto px-4 pt-16 pb-10 text-center">
+  <span class="section-label mb-6">150,000+ CHANNELS</span>
+  <h1 class="text-4xl md:text-6xl font-extrabold gradient-text mt-4 leading-tight">IPTV Channels List</h1>
+  <p class="text-white/50 text-lg mt-4 max-w-2xl mx-auto">Browse our complete lineup of live TV channels from 100+ countries. Sports, movies, news, entertainment, kids, and more — all in one place.</p>
+  <div class="mt-6 flex flex-wrap justify-center gap-3">
+    <a href="https://wa.me/447488842848?text=Hi%20StreamElite%20-%20I%20want%20to%20subscribe%20to%20see%20the%20full%20channel%20list" target="_blank" rel="noopener" class="btn-primary">Get Full Access on WhatsApp</a>
+  </div>
+</section>
+<div class="max-w-7xl mx-auto px-4 pb-4">
+  <div class="flex flex-wrap gap-2 justify-center">
+    <button class="region-btn active" data-region="all">All Regions</button>
+    <button class="region-btn" data-region="americas">Americas</button>
+    <button class="region-btn" data-region="europe">Europe</button>
+    <button class="region-btn" data-region="asia">Asia</button>
+    <button class="region-btn" data-region="arab">Arab</button>
+    <button class="region-btn" data-region="africa">Africa</button>
+  </div>
+</div>
+<div class="max-w-7xl mx-auto px-4 pb-6">
+  <input type="text" class="search-input" id="channelSearch" placeholder="Search channels or categories...">
+</div>
+<div class="max-w-7xl mx-auto px-4 pb-20" id="accordionContainer">
+    <div class="region-section active" id="region-americas">
+      <h2 class="text-xl font-bold text-white mb-4 mt-10 flex items-center gap-2">Americas <span class="count-badge" id="count-americas"></span></h2>
+      <div class="card overflow-hidden">
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AM | USA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li class="channel-sub">PPV UFC</li><li>PPV - UFC 24/7 UHD</li><li>PPV - UFC FIGHT PASS</li><li>PPV: UFC 00-06 UHD</li><li class="channel-sub">PPV BOXING</li><li>PPV: BOXING 00-07 FHD</li><li class="channel-sub">PPV MMA</li><li>PPV - MMA 01-15</li><li class="channel-sub">PPV WRESTLING</li><li>PPV - WRESTLING 00-05</li><li class="channel-sub">ESPN PLUS</li><li>ESPN PLUS 00-28</li><li class="channel-sub">USA GENERAL</li><li>USA - ABC UHD</li><li>USA - NBC UHD</li><li>USA - CBS UHD</li><li>USA - FOX UHD</li><li>USA - PBS HD</li><li>USA - CW HD</li><li>USA - A&amp;E HD</li><li>USA - AMC HD</li><li>USA - BET HD</li><li>USA - BRAVO HD</li><li>USA - CNN HD</li><li>USA - COMEDY CENTRAL HD</li><li>USA - DISCOVERY HD</li><li>USA - DISNEY HD</li><li>USA - ESPN HD</li><li>USA - FOOD NETWORK HD</li><li>USA - FOX NEWS HD</li><li>USA - FX HD</li><li>USA - HBO HD</li><li>USA - HISTORY HD</li><li>USA - HGTV HD</li><li>USA - MSNBC HD</li><li>USA - MTV HD</li><li>USA - NAT GEO HD</li><li>USA - NICKELODEON HD</li><li>USA - SYFY HD</li><li>USA - TBS HD</li><li>USA - TLC HD</li><li>USA - TNT HD</li><li>USA - TRAVEL CHANNEL HD</li><li>USA - USA NETWORK HD</li><li>USA - WEATHER CHANNEL HD</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AM | MEXICO <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>MX - ADN40 SD</li><li>MX - AZTECA UNO HD</li><li>MX - AZTECA 7 HD</li><li>MX - CANAL 5 HD</li><li>MX - CANAL 11 HD</li><li>MX - CARTOON NETWORK HD</li><li>MX - CINECANAL HD</li><li>MX - DISNEY CHANNEL HD</li><li>MX - ESPN HD</li><li>MX - FOX HD</li><li>MX - FOX SPORTS HD</li><li>MX - GOLDEN HD</li><li>MX - HBO HD</li><li>MX - HISTORY HD</li><li>MX - LAS ESTRELLAS HD</li><li>MX - MILENIO TV HD</li><li>MX - MTV HD</li><li>MX - NAT GEO HD</li><li>MX - NICKELODEON HD</li><li>MX - TNT HD</li><li>MX - TV AZTECA HD</li><li>MX - UNICABLE HD</li><li>MX - UNIVERSAL HD</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AM | LATINO <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>LATIN - TELEMUNDO HD</li><li>LATIN - UNIVISION HD</li><li>LATIN - FOX HD</li><li>LATIN - DISCOVERY CHANNEL HD</li><li>LATIN - HBO HD</li><li>LATIN - ESPN HD</li><li>LATIN - CNN EN ESPANOL</li><li>LATIN - CARACOL HD</li><li>LATIN - FOX SPORTS HD</li><li>LATIN - TNT HD</li><li>LATIN - A&amp;E HD</li><li>LATIN - ANIMAL PLANET HD</li><li>LATIN - BABY TV</li><li>LATIN - BOOMERANG</li><li>LATIN - CARTOON NETWORK HD</li><li>LATIN - DISNEY CHANNEL HD</li><li>LATIN - FOOD NETWORK HD</li><li>LATIN - FX HD</li><li>LATIN - HISTORY HD</li><li>LATIN - NAT GEO HD</li><li>LATIN - NICKELODEON HD</li><li>LATIN - SONY CHANNEL HD</li><li>LATIN - TLC HD</li><li>LATIN - WARNER CHANNEL HD</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AM | CANADA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>CA - ABC EAST HD</li><li>CA - ABC WEST HD</li><li>CA - AMC HD</li><li>CA - BBC CANADA HD</li><li>CA - CBC HD</li><li>CA - CBS HD</li><li>CA - CTV HD</li><li>CA - DISCOVERY HD</li><li>CA - DISNEY CHANNEL HD</li><li>CA - ESPN HD</li><li>CA - FOX HD</li><li>CA - GLOBAL TV HD</li><li>CA - HBO 1 HD</li><li>CA - HBO 2 HD</li><li>CA - HGTV HD</li><li>CA - HISTORY HD</li><li>CA - NBC HD</li><li>CA - NICKELODEON HD</li><li>CA - SPORTSNET 360 HD</li><li>CA - SPORTSNET ONE HD</li><li>CA - SPORTSNET ONTARIO HD</li><li>CA - SPORTSNET PACIFIC HD</li><li>CA - SPORTSNET WEST HD</li><li>CA - TELETOON HD</li><li>CA - TLC HD</li><li>CA - TSN 1 HD</li><li>CA - TSN 2 HD</li><li>CA - TSN 3 HD</li><li>CA - TSN 4 HD</li><li>CA - TSN 5 HD</li><li>CA - TVA HD</li><li>CA - TVA SPORTS HD</li><li>CA - YTV HD</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AM | CARIBBEAN <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>CAR - AL JAZEERA</li><li>CAR - ANIMAL PLANET</li><li>CAR - AXN</li><li>CAR - B4U</li><li>CAR - BOOMERANG</li><li>CAR - CNN</li><li>CAR - DISCOVERY</li><li>CAR - DISNEY</li><li>CAR - ESPN</li><li>CAR - FOX</li><li>CAR - HBO</li><li>CAR - MTV</li><li>CAR - NICKELODEON</li><li>CAR - TNT</li><li>CAR - CARIBVISION</li><li>CAR - CBN</li><li>CAR - CBC CARIBBEAN</li><li>CAR - TV6</li><li>CAR - FLOW SPORTS</li><li>CAR - SPORTSMAX</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AM | BRAZIL <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li class="channel-sub">BRAZIL GENERAL</li><li>BR - GLOBO SP HD</li><li>BR - GLOBO RJ HD</li><li>BR - RECORD HD</li><li>BR - SBT HD</li><li>BR - BAND HD</li><li>BR - CULTURA HD</li><li>BR - WOOHOO</li><li>BR - VIVA</li><li class="channel-sub">BRAZIL NEWS</li><li>BR - GLOBO NEWS</li><li>BR - RECORD NEWS</li><li>BR - CNN BRASIL</li><li class="channel-sub">BRAZIL KIDS</li><li>BR - CARTOON NETWORK</li><li>BR - DISNEY CHANNEL</li><li>BR - NICKELODEON</li><li>BR - BOOMERANG</li><li class="channel-sub">BRAZIL MOVIES</li><li>BR - HBO HD</li><li>BR - MAX PRIME</li><li>BR - TELECINE 1-5</li><li>BR - TNT HD</li><li class="channel-sub">BRAZIL SPORTS</li><li>BR - SPORTV 1-3</li><li>BR - ESPN BRASIL</li><li>BR - FOX SPORTS</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AM | ARGENTINA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>ARG - FOX SPORTS PREMIUM</li><li>ARG - 13 MAX</li><li>ARG - AMERICA TV</li><li>ARG - C5N</li><li>ARG - CANAL 26</li><li>ARG - CRONICA</li><li>ARG - DIRECT TV SPORTS 1</li><li>ARG - DIRECT TV SPORTS 2</li><li>ARG - DIRECT TV SPORTS PLUS</li><li>ARG - EL TRECE</li><li>ARG - ELNUEVE</li><li>ARG - ESPN 1-3</li><li>ARG - FOX SPORT 1-3</li><li>ARG - LN+</li><li>ARG - TELEFE</li><li>ARG - TNT SPORT</li><li>ARG - TV PUBLICA</li><li>ARG - TYC SPORTS</li><li>ARG - DEPORTV</li><li>ARG - CINE AR</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AM | COLOMBIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>CO - CARACOL HD</li><li>CO - RCN HD</li><li>CO - CABLENOTICIAS</li><li>CO - CITY TV</li><li>CO - SENAL COLOMBIA</li><li>CO - TELE MEDELLIN</li><li>CO - TELEANTIOQUIA</li><li>CO - TELEPACIFICO</li><li>CO - WIN SPORTS</li><li>CO - WIN SPORTS+</li><li>CO - CANAL TRACE</li><li>CO - CARACOL INTERNACIONAL</li><li>CO - TRECE</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AM | ECUADOR <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>EC - CANAL UNO</li><li>EC - ECUADOR TV</li><li>EC - ECUAVISA</li><li>EC - RTS</li><li>EC - TC ECUADOR</li><li>EC - TELE AMAZONAS</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AM | URUGUAY <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>UY - CANAL 10</li><li>UY - MONTECARLO TV</li><li>UY - TELE 12</li><li>UY - VTV HD</li><li>UY - CHARRUA TV</li><li>UY - AV+</li><li>UY - TNU</li><li>UY - TV CIUDAD</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AM | PERU <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>PE - AMERICA TELEVISION</li><li>PE - ATV</li><li>PE - CAPITAL TV</li><li>PE - LATINA</li><li>PE - PANAMERICANA</li><li>PE - TV PERU</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AM | CHILE <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>CL - 13 CABLE</li><li>CL - CANAL 13</li><li>CL - CDF PREMIUM</li><li>CL - CHILEVISION</li><li>CL - CNN CHILE</li><li>CL - LA RED</li><li>CL - MEGA</li><li>CL - TVN</li><li>CL - FOX SPORTS</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AM | CUBA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>CU - CUBAVISION</li><li>CU - CUBAVISION INTERNACIONAL</li><li>CU - TELE REBELDE</li><li>CU - TV MARTI</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AM | PANAMA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>PN - ECO</li><li>PN - NET TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AM | DOMINICAN REPUBLIC <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>RD - COLORVISION</li><li>RD - TELE FUTURO</li><li>RD - TELESISTEMA</li><li>RD - XTREMO PREMIUM</li><li>RD - TELEUNIVERSO</li><li>RD - CERTV</li><li>RD - CDN</li><li>RD - CDN SPORTS MAX</li><li>RD - SUPER CANAL</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AM | VENEZUELA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>VE - CANAL ONCE</li><li>VE - TELESUR</li><li>VE - VENEVISION PLUS</li><li>VE - VENEZOLANA TV</li><li>VE - GLOBOVISION</li><li>VE - PROMAR</li></ul></div></div>
+      </div>
+    </div>
+    <div class="region-section active" id="region-europe">
+      <h2 class="text-xl font-bold text-white mb-4 mt-10 flex items-center gap-2">Europe <span class="count-badge" id="count-europe"></span></h2>
+      <div class="card overflow-hidden">
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | UK GENERAL <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li class="channel-sub">UK UHD/FHD</li><li>UK - BBC ONE UHD</li><li>UK - BBC TWO UHD</li><li>UK - BBC THREE UHD</li><li>UK - BBC FOUR UHD</li><li>UK - ITV 1 UHD</li><li>UK - ITV 2 UHD</li><li>UK - ITV 3 UHD</li><li>UK - ITV 4 UHD</li><li>UK - CHANNEL 4 FHD</li><li>UK - CHANNEL 5 FHD</li><li>UK - E4 FHD</li><li>UK - CBBC</li><li>UK - CBeebies</li><li>UK - SMITHSONIAN</li><li class="channel-sub">UK SD</li><li>UK - BBC ONE SD</li><li>UK - ITV 1 SD</li><li>UK - CHANNEL 4 SD</li><li>UK - CHANNEL 5 SD</li><li>UK - TALK TV</li><li class="channel-sub">UK LOCALS</li><li>UK - BBC ALBA</li><li>UK - BBC SCOTLAND</li><li>UK - BBC WALES</li><li>UK - BBC ONE LONDON</li><li>UK - BBC ONE YORKS</li><li>UK - BBC ONE EAST</li><li>UK - BBC ONE NORTH WEST</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | UK NEWS <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>UK - BBC NEWS UHD</li><li>UK - BBC WORLD NEWS</li><li>UK - BBC PARLIAMENT</li><li>UK - BLOOMBERG EU</li><li>UK - CNN FHD</li><li>UK - CNN INT'L</li><li>UK - FRANCE 24</li><li>UK - GB NEWS</li><li>UK - SKY NEWS UHD</li><li>UK - AL JAZEERA EN UHD</li><li>UK - TRT WORLD</li><li>UK - CNBC</li><li>UK - EURONEWS</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | UK SPORTS <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li class="channel-sub">UK SPORTS UHD</li><li>UK - SKY SPORTS MAIN EVENTS UHD</li><li>UK - SKY SPORTS PL UHD</li><li>UK - SKY SPORTS FOOTBALL UHD</li><li>UK - BT SPORTS 1 UHD</li><li>UK - BT SPORTS 2 UHD</li><li>UK - BT SPORTS 3 UHD</li><li>UK - BT SPORTS 4 UHD</li><li>UK - SUPERSPORTS 1-4 HD</li><li class="channel-sub">UK SKY FHD</li><li>UK - SKY SPORTS MAIN EVENT FHD</li><li>UK - SKY SPORTS PL FHD</li><li>UK - SKY SPORTS FOOTBALL FHD</li><li>UK - SKY SPORTS NFL FHD</li><li>UK - SKY SPORTS F1 FHD</li><li>UK - SKY SPORTS GOLF FHD</li><li>UK - SKY SPORTS MIX FHD</li><li>UK - BT SPORTS 1-3 FHD</li><li>UK - EUROSPORT 1 FHD</li><li>UK - EUROSPORT 2 FHD</li><li>UK - MUTV</li><li>UK - LFC TV</li><li>UK - RACING UK</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | UK WORLD SPORTS <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li class="channel-sub">UK DAZN</li><li>UK - DAZN EVENT 1-7</li><li class="channel-sub">UK OPTUS</li><li>UK - OPTUS 1-12 HD</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | UK EPL <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>UK - EPL ARSENAL</li><li>UK - EPL ASTON VILLA</li><li>UK - EPL BOURNEMOUTH</li><li>UK - EPL BRENTFORD</li><li>UK - EPL BRIGHTON</li><li>UK - EPL CHELSEA</li><li>UK - EPL CRYSTAL PALACE</li><li>UK - EPL EVERTON</li><li>UK - EPL FULHAM</li><li>UK - EPL LEEDS UTD</li><li>UK - EPL LEICESTER</li><li>UK - EPL LIVERPOOL</li><li>UK - EPL MANCHESTER CITY</li><li>UK - EPL MANCHESTER UTD</li><li>UK - EPL NEWCASTLE UTD</li><li>UK - EPL NOTTINGHAM FOREST</li><li>UK - EPL SOUTHAMPTON</li><li>UK - EPL TOTTENHAM</li><li>UK - EPL WEST HAM</li><li>UK - EPL WOLVERHAMPTON</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | UK EFL <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>UK - EFL BLACKBURN ROVERS</li><li>UK - EFL BRISTOL CITY</li><li>UK - EFL BURNLEY</li><li>UK - EFL CARDIFF CITY</li><li>UK - EFL COVENTRY CITY</li><li>UK - EFL HULL CITY</li><li>UK - EFL LUTON TOWN</li><li>UK - EFL MIDDLESBROUGH</li><li>UK - EFL NORWICH CITY</li><li>UK - EFL QPR</li><li>UK - EFL SHEFFIELD UNITED</li><li>UK - EFL STOKE CITY</li><li>UK - EFL SUNDERLAND</li><li>UK - EFL SWANSEA CITY</li><li>UK - EFL WATFORD</li><li>UK - EFL WEST BROM</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | UK SCOTTISH <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>UK - SPFL CELTIC TV</li><li>UK - SPFL RANGERS TV</li><li>UK - ABERDEEN TV</li><li>UK - HIBERNIAN TV</li><li>UK - HEARTS TV</li><li>UK - ST JOHNSTONE TV</li><li>UK - MOTHERWELL TV</li><li>UK - KILMARNOCK TV</li><li>UK - DUNDEE UTD TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | UK VIAPLAY PPV <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>UK - PREMIER LEAGUE TOP EVENT FHD</li><li>UK - XTRA 01-26 FHD</li><li>UK - XTRA 40 FHD</li><li>UK - XTRA 44 FHD</li><li>UK - XTRA 48-50 FHD</li><li>UK - XTRA 63-83 FHD</li><li>UK - VIAPLAY NFL HD</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | UK AMAZON PRIME <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>UK - AMAZON UK EVENT 00-15</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | UK MOVIES <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li class="channel-sub">UK MOVIES UHD</li><li>SKY CINEMA ACTION UHD</li><li>SKY CINEMA COMEDY UHD</li><li>SKY CINEMA DRAMA UHD</li><li>SKY CINEMA GREATS UHD</li><li>SKY CINEMA HITS UHD</li><li>SKY CINEMA OSCARS UHD</li><li>SKY CINEMA PREMIERE UHD</li><li>SKY CINEMA SCIFI HORROR UHD</li><li>SKY CINEMA THRILLER UHD</li><li class="channel-sub">UK MOVIES FHD</li><li>SKY CINEMA ACTION FHD</li><li>SKY CINEMA COMEDY FHD</li><li>SKY CINEMA DISNEY FHD</li><li>SKY CINEMA DRAMA FHD</li><li>SKY CINEMA GREATS FHD</li><li>SKY CINEMA HITS FHD</li><li>SKY CINEMA PREMIERE FHD</li><li>UK - TCM HD</li><li>UK - AMC HD</li><li>UK - FILM 4 HD</li><li class="channel-sub">UK MOVIES SD</li><li>UK - HORROR CHANNEL</li><li>UK - TRUE MOVIES</li><li>UK - MOVIES4MEN</li><li>UK - SONY MOVIES</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | UK ENTERTAINMENT <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li class="channel-sub">UK ENT FHD</li><li>UK - SKY ATLANTIC FHD</li><li>UK - SKY WITNESS FHD</li><li>UK - SKY SHOWCASE FHD</li><li>UK - SKY MAX FHD</li><li>UK - SKY ARTS</li><li>UK - GOLD</li><li>UK - DAVE</li><li>UK - FOX</li><li>UK - UNIVERSAL</li><li>UK - TLC</li><li>UK - COMEDY CENTRAL</li><li>UK - E!</li><li>UK - LIFETIME</li><li>UK - MORE 4</li><li>UK - QUEST</li><li class="channel-sub">UK ENT SD</li><li>UK - 5 SELECT</li><li>UK - 5 STAR</li><li>UK - 5 USA</li><li>UK - BLAZE</li><li>UK - CBS DRAMA</li><li>UK - CBS JUSTICE</li><li>UK - CHALLENGE</li><li>UK - DMAX</li><li>UK - DRAMA</li><li>UK - PBS AMERICA</li><li>UK - REALLY</li><li>UK - YESTERDAY</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | UK KIDS <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li class="channel-sub">UK KIDS FHD</li><li>UK - DISNEY CHANNEL FHD</li><li>UK - DISNEY XD FHD</li><li>UK - DISNEY JUNIOR FHD</li><li>UK - BOOMERANG FHD</li><li>UK - CARTOON NETWORK FHD</li><li>UK - NICKELODEON FHD</li><li>UK - CBEEBIES UHD</li><li class="channel-sub">UK KIDS SD</li><li>UK - BABY TV</li><li>UK - CARTOONITO</li><li>UK - NICK JR</li><li>UK - NICK TOONS</li><li>UK - TINY POP</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | UK DOCUMENTARY <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>UK - NAT GEO WILD</li><li>UK - NAT GEO</li><li>UK - ANIMAL PLANET</li><li>UK - CRIME INVESTIGATION</li><li>UK - HISTORY</li><li>UK - HISTORY 2</li><li>UK - INVESTIGATION DISCOVERY</li><li>UK - PARAMOUNT</li><li>UK - SKY NATURE</li><li>UK - SYFY</li><li>UK - TLC</li><li>UK - DISCOVERY</li><li>UK - DISCOVERY TURBO</li><li>UK - DMAX</li><li>UK - HGTV</li><li>UK - ID</li><li>UK - TRAVEL CHANNEL</li><li>UK - VICELAND</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | UK MUSIC <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>UK - MTV FHD</li><li>UK - MTV LIVE</li><li>UK - MTV BASE</li><li>UK - MTV DANCE</li><li>UK - MTV HITS</li><li>UK - MTV MUSIC</li><li>UK - 4 MUSIC</li><li>UK - BOX HITS</li><li>UK - CLUBLAND TV</li><li>UK - KISS</li><li>UK - MAGIC</li><li>UK - POP</li><li>UK - NOW 70S</li><li>UK - NOW 80S</li><li>UK - NOW 90S</li><li>UK - KARAOKE 1-3</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | UK PPV EVENTS <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>UK - SBO 1-4</li><li>UK - PPV 01-34</li><li>UK - UFC UHD</li><li>UK - BOXING FEED</li><li>UK - PDC</li><li>UK - ITV PPV</li><li>UK - BT SPORTS EXTRA 1-6 UHD</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | UK 24/7 FLEX <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>UK - WILL FERRELL MOVIES</li><li>UK - STEVEN SEAGAL</li><li>UK - CHAPPELLE'S SHOW</li><li>UK - BATMAN MOVIES</li><li>UK - ARNOLD SCHWARZENEGGER</li><li>UK - AL PACINO</li><li>UK - DEADLIEST CATCH</li><li>UK - THE BIG BANG THEORY</li><li>UK - THE SIMPSONS</li><li>UK - FRIENDS</li><li>UK - THE OFFICE</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | FRANCE <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li class="channel-sub">FRANCE GENERAL</li><li>FR - TF1 FHD</li><li>FR - FRANCE 2 FHD</li><li>FR - FRANCE 3 FHD</li><li>FR - FRANCE 4 FHD</li><li>FR - FRANCE 5 FHD</li><li>FR - ARTE FHD</li><li>FR - M6 FHD</li><li>FR - C8</li><li>FR - W9</li><li>FR - TMC</li><li>FR - TFX</li><li>FR - NRJ 12</li><li>FR - BFMTV</li><li>FR - CANAL+ FHD</li><li>FR - CANAL+ CINEMA</li><li>FR - CANAL+ SPORT</li><li>FR - CANAL+ SERIES</li><li>FR - TV5 MONDE</li><li class="channel-sub">FRANCE ENTERTAINMENT</li><li>FR - AB1</li><li>FR - 13EME RUE</li><li>FR - SYFY</li><li>FR - DISCOVERY</li><li>FR - NAT GEO</li><li>FR - PLANETE</li><li>FR - RMC DECOUVERTE</li><li>FR - M6 MUSIC</li><li>FR - NRJ HITS</li><li>FR - MTV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | GERMANY <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li class="channel-sub">DE FTA</li><li>DE - DAS ERSTE HD</li><li>DE - ZDF HD</li><li>DE - RTL HD</li><li>DE - PROSIEBEN HD</li><li>DE - SAT 1 HD</li><li>DE - VOX HD</li><li>DE - TELE 5</li><li>DE - DMAX</li><li>DE - WELT</li><li class="channel-sub">DE SPORT</li><li>DE - SKY SPORT 1-5</li><li>DE - SKY BUNDESLIGA 1-10</li><li>DE - EUROSPORT 1/2</li><li class="channel-sub">DE KINO</li><li>DE - SKY CINEMA</li><li>DE - TNT FILM</li><li>DE - HBO</li><li class="channel-sub">DE DOKUMENTAR</li><li>DE - DISCOVERY</li><li>DE - HISTORY</li><li>DE - NAT GEO</li><li class="channel-sub">DE ENTERTAINMENT</li><li>DE - FOX</li><li>DE - SYFY</li><li>DE - 13TH STREET</li><li>DE - TNT SERIE</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | IRELAND <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>IRL - RTE One</li><li>IRL - RTE Two</li><li>IRL - VIRGIN MEDIA ONE</li><li>IRL - VIRGIN MEDIA TWO</li><li>IRL - TG4</li><li>IRL - BBC One NI</li><li>IRL - BBC Two NI</li><li>IRL - UTV</li><li>IRL - CHANNEL 4</li><li>IRL - SKY NEWS</li><li>IRL - SKY ATLANTIC</li><li>IRL - SKY SPORTS</li><li>IRL - MTV</li><li>IRL - COMEDY CENTRAL</li><li>IRL - DISCOVERY</li><li>IRL - E4</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | SPAIN <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li class="channel-sub">SPAIN GENERAL</li><li>SP - LA 1 HD</li><li>SP - LA 2 HD</li><li>SP - ANTENA 3 HD</li><li>SP - CUATRO HD</li><li>SP - TELECINCO HD</li><li>SP - LA SEXTA HD</li><li>SP - FDF</li><li>SP - DIVINITY</li><li>SP - 24 HORAS</li><li class="channel-sub">SPAIN SPORTS</li><li>SP - LA LIGA TV</li><li>SP - GOL</li><li>SP - MOVISTAR LALIGA</li><li>SP - DAZN 1-5</li><li>SP - EUROSPORT 1/2</li><li>SP - R MADRID TV</li><li>SP - BARCA TV</li><li class="channel-sub">SPAIN CINE</li><li>SP - AXN</li><li>SP - AMC</li><li>SP - FOX</li><li>SP - TNT</li><li>SP - ATRESERIES</li><li class="channel-sub">SPAIN KIDS</li><li>SP - BOING</li><li>SP - DISNEY</li><li>SP - NICKELODEON</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | ITALY <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li class="channel-sub">ITALY GENERAL</li><li>IT - RAI 1 UHD</li><li>IT - RAI 2 UHD</li><li>IT - RAI 3 UHD</li><li>IT - RETE 4</li><li>IT - CANALE 5</li><li>IT - ITALIA 1</li><li>IT - LA7</li><li>IT - TV8</li><li>IT - NOVE</li><li class="channel-sub">ITALY SPORT</li><li>IT - SKY SPORT 1-24</li><li>IT - DAZN</li><li>IT - MOTOR TV</li><li class="channel-sub">ITALY CINEMA</li><li>IT - SKY CINEMA UNO</li><li>IT - SKY CINEMA DUE</li><li>IT - SKY CINEMA COLLECTION</li><li>IT - PREMIUM CINEMA 1-3</li><li class="channel-sub">ITALY KIDS</li><li>IT - BOOMERANG</li><li>IT - CARTOON NETWORK</li><li>IT - DISNEY</li><li>IT - NICK</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | NETHERLANDS <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>NL - NPO 1 HD</li><li>NL - NPO 2 HD</li><li>NL - NPO 3 HD</li><li>NL - RTL 4 HD</li><li>NL - RTL 5 HD</li><li>NL - RTL 7 HD</li><li>NL - RTL 8 HD</li><li>NL - SBS 6 HD</li><li>NL - SBS 9 HD</li><li>NL - NET 5 HD</li><li>NL - FOX SPORT 1-6</li><li>NL - ZIGGO SPORT EXTRA</li><li>NL - EUROSPORT 1/2</li><li>NL - DISCOVERY</li><li>NL - NAT GEO</li><li>NL - HISTORY</li><li>NL - FILM 1 ACTION</li><li>NL - FILM 1 PREMIERE</li><li>NL - MTV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | GREECE <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li class="channel-sub">GREECE GENERAL</li><li>GR - ERT 1 HD</li><li>GR - ERT 2 HD</li><li>GR - ERT 3 HD</li><li>GR - ALPHA HD</li><li>GR - ANT 1 HD</li><li>GR - SKAI HD</li><li>GR - MEGA CHANNEL</li><li>GR - STAR HD</li><li class="channel-sub">GREECE SPORTS</li><li>GR - NOVA SPORTS 1-4</li><li>GR - COSMOTE SPORT 1-4</li><li class="channel-sub">GREECE MOVIES</li><li>GR - NOVA CINEMA 1-4</li><li>GR - COSMOTE CINEMA 1-4</li><li class="channel-sub">GREECE DOC</li><li>GR - NAT GEO</li><li>GR - DISCOVERY</li><li>GR - COSMOTE HISTORY</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | SWITZERLAND <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>CH - RSI LA 1 HD</li><li>CH - RSI LA 2 HD</li><li>CH - SRF 1 HD</li><li>CH - SRF ZWEI HD</li><li>CH - SRF INFO HD</li><li>CH - RTS UN HD</li><li>CH - RTS DEUX HD</li><li>CH - TELECLUB SPORT 1-2</li><li>CH - MY SPORTS 1-9</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | SWEDEN <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>SW - SVT 1 HD</li><li>SW - SVT 2 HD</li><li>SW - TV3 HD</li><li>SW - TV4 HD</li><li>SW - KANAL 5 HD</li><li>SW - KANAL 9 HD</li><li>SW - TV6 HD</li><li>SW - TV8 HD</li><li>SW - TV10 HD</li><li>SW - TV12 HD</li><li>SW - EUROSPORT 1/2</li><li>SW - VIASAT SPORT</li><li>SW - C MORE SPORT</li><li>SW - DISCOVERY</li><li>SW - NAT GEO</li><li>SW - HISTORY</li><li>SW - DISNEY</li><li>SW - MTV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | DENMARK <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>DK - DR 1 HD</li><li>DK - DR 2 HD</li><li>DK - TV2 HD</li><li>DK - TV2 NEWS</li><li>DK - TV2 SPORT</li><li>DK - TV2 ZULU</li><li>DK - TV3 HD</li><li>DK - TV3+</li><li>DK - TV3 MAX</li><li>DK - EUROSPORT 1/2</li><li>DK - DISCOVERY</li><li>DK - NAT GEO</li><li>DK - C MORE FIRST</li><li>DK - VIASAT FILM</li><li>DK - DISNEY</li><li>DK - MTV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | BULGARIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>BU - BNT 1 HD</li><li>BU - BNT 2 HD</li><li>BU - BTV HD</li><li>BU - BTV ACTION</li><li>BU - BTV CINEMA</li><li>BU - NOVA HD</li><li>BU - NOVA SPORT</li><li>BU - EUROSPORT 1/2</li><li>BU - HBO HD</li><li>BU - HBO 2/3</li><li>BU - DIEMA SPORT 1-2</li><li>BU - MAX SPORT 1-3</li><li>BU - DISCOVERY</li><li>BU - NAT GEO</li><li>BU - HISTORY</li><li>BU - FOX</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | NORWAY <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>NO - NRK 1 HD</li><li>NO - NRK 2 HD</li><li>NO - TV NORGE HD</li><li>NO - TV2 HD</li><li>NO - TV2 SPORT</li><li>NO - TV3 HD</li><li>NO - VIASAT 4</li><li>NO - EUROSPORT 1/2</li><li>NO - VIASPORT</li><li>NO - DISCOVERY</li><li>NO - NAT GEO</li><li>NO - DISNEY</li><li>NO - MTV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | FINLAND <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>FI - YLE TV1 HD</li><li>FI - YLE TV2 HD</li><li>FI - MTV3 HD</li><li>FI - NELONEN</li><li>FI - SUB</li><li>FI - FOX</li><li>FI - DISCOVERY</li><li>FI - NAT GEO</li><li>FI - DISNEY</li><li>FI - C MORE SPORT 1-2</li><li>FI - EUROSPORT 1/2</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | BELGIUM <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li class="channel-sub">VLAAMS</li><li>BE - EEN HD</li><li>BE - Q2 HD</li><li>BE - VTM HD</li><li>BE - VIER</li><li>BE - VIJF</li><li>BE - KETNET</li><li class="channel-sub">BELGIUM FRENCH</li><li>BE - LA UNE</li><li>BE - LA DEUX</li><li>BE - RTL TVI</li><li class="channel-sub">BELGIUM SPORTS</li><li>BE - PLAY SPORTS 1-7</li><li>BE - VOOSPORT 1-3</li><li>BE - PROXIMUS 11 SPORT 1-3</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | PORTUGAL <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>PT - RTP 1 HD</li><li>PT - RTP 2 HD</li><li>PT - RTP 3 HD</li><li>PT - SIC HD</li><li>PT - TVI HD</li><li>PT - TVI 24</li><li>PT - AXN</li><li>PT - TV CINE 1-4</li><li>PT - FOX</li><li>PT - CNN PORTUGAL</li><li>PT - BABY TV</li><li>PT - DISNEY</li><li>PT - CARTOON NETWORK</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | AUSTRIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>AT - ORF 1 HD</li><li>AT - ORF 2N HD</li><li>AT - ORF III HD</li><li>AT - ORF SPORT</li><li>AT - ATV HD</li><li>AT - PULS 4</li><li>AT - SERVUS TV</li><li>AT - SKY SPORT AUSTRIA</li><li>AT - DAZN 1/2</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | POLAND <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>PL - TVP 1 HD</li><li>PL - TVP 2 HD</li><li>PL - POLSAT HD</li><li>PL - TVN HD</li><li>PL - TVN 7</li><li>PL - TV4</li><li>PL - HBO HD</li><li>PL - HBO 2/3</li><li>PL - CANAL+ HD</li><li>PL - CANAL+ FILM</li><li>PL - POLSAT FILM</li><li>PL - AXN</li><li>PL - FOX</li><li>PL - TNT</li><li>PL - AMC</li><li>PL - COMEDY CENTRAL</li><li>PL - TLC</li><li>PL - HGTV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | ROMANIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>RO - TVR 1 HD</li><li>RO - TVR 2 HD</li><li>RO - PRO TV HD</li><li>RO - ANTENA 1</li><li>RO - ANTENA 3</li><li>RO - ROMANIA TV</li><li>RO - DIGI SPORT 1-3</li><li>RO - HBO ROMANIA</li><li>RO - AXN</li><li>RO - KANAL D</li><li>RO - NAT GEO</li><li>RO - DISCOVERY</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | HUNGARY <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>HU - TV2 HD</li><li>HU - RTL KLUB HD</li><li>HU - M4 HD</li><li>HU - VIASAT 3</li><li>HU - HBO HD</li><li>HU - AXN</li><li>HU - AMC</li><li>HU - DIGI SPORT 1/2</li><li>HU - SPORT 1/2</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | UKRAINE <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>UA - 1+1 HD</li><li>UA - INTER HD</li><li>UA - ICTV HD</li><li>UA - STB HD</li><li>UA - NOVY CHANNEL</li><li>UA - 5 KANAL</li><li>UA - 112 UKRAINE</li><li>UA - XSPORT</li><li>UA - UA KRYM</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | CZECH <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>CZ - CT 1 HD</li><li>CZ - CT 2 HD</li><li>CZ - NOVA HD</li><li>CZ - NOVA CINEMA</li><li>CZ - PRIMA HD</li><li>CZ - PRIMA COOL</li><li>CZ - PRIMA LOVE</li><li>CZ - BARANDOV</li><li>CZ - O2 TV SPORT</li><li>CZ - EUROSPORT 1/2</li><li>CZ - HBO HD</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | CROATIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>HRT 1 HD</li><li>HRT 2 HD</li><li>HRT 3 HD</li><li>HRT 4 HD</li><li>NOVA TV</li><li>RTL HR</li><li>RTL 2</li><li>SPORT KLUB 1-8</li><li>ARENA SPORT 1-5</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | SERBIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>RTS 1 HD</li><li>RTS 2 HD</li><li>PRVA HD</li><li>HAPPY TV</li><li>PINK TV</li><li>PINK ACTION</li><li>PINK MOVIES</li><li>SPORT KLUB 1-8</li><li>ARENA SPORT 1-5</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | EXYU <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>BHT HD</li><li>FTV</li><li>NOVA BH</li><li>FACE TV</li><li>AL JAZEERA BALKAN</li><li>HRT 1-4</li><li>RTS SVET</li><li>PRVA WORLD</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | ALBANIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>RTK 1-4</li><li>TOP CHANNEL HD</li><li>VIZION PLUS</li><li>KLAN TV HD</li><li>RTSH 1-3</li><li>TV TETOVA</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | RUSSIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>RU - CHANNEL ONE HD</li><li>RU - RUSSIA 1 HD</li><li>RU - NTV HD</li><li>RU - CTC HD</li><li>RU - TNT HD</li><li>RU - REN TV</li><li>RU - RT HD</li><li>RU - MTV RUSSIA</li><li>RU - DOM KINO</li><li>RU - FOX HD</li><li>RU - TV 1000 PREMIUM</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | ARMENIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>ARM - ARMENIA TV</li><li>ARM - PUBLIC TV</li><li>ARM - KENTRON TV</li><li>ARM - SHANT HD</li><li>ARM - ARMENIA NEWS</li><li>ARM - HAY TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | AZERBAIJAN <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>AZE - AZ TV</li><li>AZE - ATV</li><li>AZE - ARB</li><li>AZE - CBC SPORT HD</li><li>AZE - XEZER TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | MALTA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>MT - TVM HD</li><li>MT - NET TV HD</li><li>MT - ONE TV</li><li>MT - SMASH TV</li><li>MT - SMASH SPORTS</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | SLOVENIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>SLO - SLOV 1 HD</li><li>SLO - SLOV 2 HD</li><li>SLO - POP TV</li><li>SLO - PLANET HD</li><li>SLO - HISTORY HD</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | MACEDONIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>MK - MRT 1 HD</li><li>MK - MRT 2 HD</li><li>MK - KANAL 5</li><li>MK - SITEL</li><li>MK - TELMA</li><li>MK - ALFA</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">EU | MONTENEGRO <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>RTV CG 1 HD</li><li>RTV CG 2 HD</li><li>NOVA M</li><li>PRVA CG</li><li>VIJESTI</li></ul></div></div>
+      </div>
+    </div>
+    <div class="region-section active" id="region-asia">
+      <h2 class="text-xl font-bold text-white mb-4 mt-10 flex items-center gap-2">Asia <span class="count-badge" id="count-asia"></span></h2>
+      <div class="card overflow-hidden">
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | KURDISH <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>NRT HD</li><li>NRT 2</li><li>NRT 3</li><li>KURDMAX HD</li><li>KURDMAX MUSIC</li><li>K24</li><li>KURDISTAN TV</li><li>KURDSAT</li><li>RUDAW HD</li><li>TRT KURDI</li><li>ZAGROS TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | IRAN <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>IRIB TV 1-5</li><li>IRINN NEWS</li><li>NASIM TV</li><li>JAME-JAM TV</li><li>VARZESH TV</li><li>GEM TV</li><li>GEM DRAMA</li><li>GEM SERIES</li><li>GEM MOVIES</li><li>GEM LIFE</li><li>GEM KIDS</li><li>BBC PERSIAN</li><li>IRAN INTERNATIONAL</li><li>MANOTO</li><li>IFILM TV</li><li>RADIO JAVAN TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | TURKEY <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>TR - TRT 1 HD</li><li>TR - TRT 2 HD</li><li>TR - TRT HABER</li><li>TR - TRT SPOR HD</li><li>TR - TRT COCUK</li><li>TR - KANAL D HD</li><li>TR - SHOW TV HD</li><li>TR - STAR TV HD</li><li>TR - ATV HD</li><li>TR - FOX TV HD</li><li>TR - TV8 HD</li><li>TR - NOW HD</li><li>TR - A SPOR</li><li>TR - BEIN SPORTS 1-5</li><li>TR - BEIN SPORTS MAX 1-2</li><li>TR - TLC</li><li>TR - DISNEY CHANNEL</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | INDIA UK <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>IN UK - B4U PLUS</li><li>IN UK - B4U MUSIC</li><li>IN UK - B4U MOVIES</li><li>IN UK - COLORS</li><li>IN UK - COLORS CINEPLEX</li><li>IN UK - SONY MAX</li><li>IN UK - SONY MAX 2</li><li>IN UK - SONY ASIA</li><li>IN UK - SONY SAB</li><li>IN UK - SONY TEN 1</li><li>IN UK - ZEE TV</li><li>IN UK - ZEE CINEMA</li><li>IN UK - STAR PLUS</li><li>IN UK - STAR GOLD</li><li>IN UK - NDTV</li><li>IN UK - AAJ TAK</li><li>IN UK - REPUBLIC TV</li><li>IN UK - BRIT ASIA TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | TAMIL <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>SUN TV HD</li><li>SUN MUSIC</li><li>SUN NEWS</li><li>STAR VIJAY HD</li><li>ZEE TAMIL HD</li><li>COLORS TAMIL HD</li><li>KTV HD</li><li>JAYA TV HD</li><li>DD PODHIGAI</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | TELUGU <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>STAR MAA HD</li><li>ZEE TELUGU HD</li><li>ZEE CINEMALU HD</li><li>GEMINI HD</li><li>GEMINI MOVIES</li><li>MAA MOVIES HD</li><li>ETV HD</li><li>TV9 NEWS</li><li>V6 NEWS</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | BENGALI <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>STAR JALSHA HD</li><li>STAR JALSHA MOVIES HD</li><li>COLORS BANGLA HD</li><li>ZEE BANGLA HD</li><li>SANGEET BANGLA</li><li>NEWS 18 BANGLA</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | HINDI <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>STAR PLUS HD</li><li>STAR GOLD HD</li><li>SONY TV HD</li><li>SONY MAX HD</li><li>ZEE TV HD</li><li>ZEE CINEMA HD</li><li>COLORS TV HD</li><li>COLORS CINEPLEX</li><li>&amp;TV HD</li><li>SONY SAB HD</li><li>STAR BHARAT HD</li><li>NDTV INDIA</li><li>DD NATIONAL</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | PUNJABI <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>PTC PUNJABI</li><li>PTC NEWS</li><li>PTC MUSIC</li><li>ZEE PUNJABI HD</li><li>AAJ TV</li><li>ETC PUNJABI</li><li>DHARTI TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | MARATHI <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>ZEE MARATHI HD</li><li>STAR PRAVAH HD</li><li>COLORS MARATHI HD</li><li>SONY MARATHI</li><li>ABP MAJHA</li><li>FAME TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | GUJARATI <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>ZEE GUJARATI</li><li>COLORS GUJARATI</li><li>STAR ABHINAY</li><li>TV9 GUJARATI</li><li>ABP ASMITA</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | MALAYALAM <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>ASIANET HD</li><li>ASIANET MOVIES</li><li>SURYATV HD</li><li>ZEE KERALAM HD</li><li>KAIRALI TV</li><li>AMRITA TV</li><li>MANORAMA NEWS</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | KANNADA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>STAR SUVARNA HD</li><li>ZEE KANNADA HD</li><li>COLORS KANNADA HD</li><li>UDAYA TV</li><li>TV9 KANNADA</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | BHOJPURI <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>BHOJPURI CINEMA</li><li>MASTI HD</li><li>ZEE BISKOPE</li><li>B4U BHOJPURI</li><li>BIG MAGIC BHOJPURI</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | PAKISTAN <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>PTV HOME</li><li>PTV SPORTS</li><li>PTV NEWS</li><li>ARY DIGITAL</li><li>ARY NEWS</li><li>ARY QTV</li><li>ARY ZINDAGI</li><li>ARY FILMS</li><li>GEO TV</li><li>GEO NEWS</li><li>GEO ENTERTAINMENT</li><li>HUM TV</li><li>HUM SITARAY</li><li>EXPRESS NEWS</li><li>PLAY ENTERTAINMENT</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | BANGLA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>CHANNEL I</li><li>NTV</li><li>ATN BANGLA</li><li>RTV</li><li>BOISHAKHI</li><li>CHANNEL 24</li><li>SOMOY TV</li><li>BANGLA TV</li><li>GAZI TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | ENGLISH INDIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>AND FLIX HD</li><li>AND PRIVE HD</li><li>AXN</li><li>BLOOMBERG INDIA</li><li>CNBC TV18</li><li>COLORS INFINITY</li><li>COMEDY CENTRAL</li><li>HBO HD</li><li>HISTORY TV18</li><li>MN+</li><li>NAT GEO</li><li>NDTV 24x7</li><li>SONY BBC EARTH</li><li>SONY PIX</li><li>TLC</li><li>WB</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | PHILIPPINES <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>ABS-CBN</li><li>GMA 7 HD</li><li>GMA NEWS TV</li><li>TV5</li><li>CNN PHILIPPINES</li><li>HBO PH</li><li>NBA TV PH</li><li>DISCOVERY PH</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | THAILAND <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>CHANNEL 3 HD</li><li>CHANNEL 7 HD</li><li>CHANNEL 8 HD</li><li>ONE 31 HD</li><li>WORKPOINT TV</li><li>THAIRATH TV</li><li>PPTV HD</li><li>TRUE SPORTS 1-7</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | SOUTH KOREA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>KBS 1 HD</li><li>KBS 2 HD</li><li>MBC HD</li><li>SBS HD</li><li>JTBC HD</li><li>TV CHOSUN</li><li>YTN</li><li>KBS WORLD</li><li>ARIRANG TV</li><li>OCN</li><li>CGV</li><li>SBS GOLF</li><li>SPOTV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | MALAYSIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>TV1</li><li>TV2</li><li>TV3</li><li>NTV7</li><li>8TV</li><li>TV9</li><li>ASTRO SUPERSPORT</li><li>ASTRO ARENA</li><li>HYPP TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | VIETNAM <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>VTV 1 HD</li><li>VTV 2 HD</li><li>VTV 3 HD</li><li>VTV 4 HD</li><li>HTV 1</li><li>HTV 2</li><li>KPLUS</li><li>BONG DA TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | CHINA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>CCTV 1 HD</li><li>CCTV 2 HD</li><li>CCTV 3 HD</li><li>CCTV 4 HD</li><li>CCTV 5 HD</li><li>CCTV 5+ HD</li><li>CCTV 6 HD</li><li>CCTV 7 HD</li><li>CCTV 8 HD</li><li>CCTV 13 HD</li><li>HUNAN TV HD</li><li>ZHEJIANG TV HD</li><li>JIANGSU TV HD</li><li>PHOENIX TV</li><li>CGTN</li><li>DRAGON TV HD</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | AFGHANISTAN <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>RTA TV</li><li>RTA SPORT</li><li>ATN</li><li>ARIANA TV</li><li>TOLO TV</li><li>TOLO NEWS</li><li>1TV</li><li>SHAMSHAD TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AS | KAZAKHSTAN <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>KZ - KAZAKHSTAN TV</li><li>KZ - EL ARNA</li><li>KZ - KTK</li><li>KZ - 31 CHANNEL</li><li>KZ - ASTANA TV</li><li>KZ - QAZ SPORT</li></ul></div></div>
+      </div>
+    </div>
+    <div class="region-section active" id="region-arab">
+      <h2 class="text-xl font-bold text-white mb-4 mt-10 flex items-center gap-2">Arab / Middle East <span class="count-badge" id="count-arab"></span></h2>
+      <div class="card overflow-hidden">
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | MBC GROUP <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>MBC 1 HD</li><li>MBC 2 HD</li><li>MBC 3 HD</li><li>MBC 4 HD</li><li>MBC ACTION</li><li>MBC MAX</li><li>MBC BOLLYWOOD</li><li>MBC DRAMA</li><li>MBC IRAQ</li><li>AL ARABIYA</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | BEIN SPORTS <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>BEIN SPORTS 1 HD</li><li>BEIN SPORTS 2 HD</li><li>BEIN SPORTS 3 HD</li><li>BEIN SPORTS 4 HD</li><li>BEIN SPORTS 5 HD</li><li>BEIN SPORTS 6 HD</li><li>BEIN SPORTS 7 HD</li><li>BEIN SPORTS NEWS</li><li>BEIN FRANCE 1-3</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | UAE <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>ABU DHABI TV</li><li>ABU DHABI SPORTS 1-3</li><li>DUBAI TV</li><li>DUBAI ONE</li><li>DUBAI SPORTS</li><li>DUBAI RACING</li><li>SHARJAH TV</li><li>AJMAN TV</li><li>UAE TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | SAUDI ARABIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>SAUDI TV 1 HD</li><li>SAUDI TV 2 HD</li><li>SAUDI SPORTS 1-4 HD</li><li>SAUDI SUNDUS</li><li>SAUDI KHALIJ</li><li>SAUDI AL QURAN</li><li>KSA SPORTS</li><li>AL EKHBAIRYA</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | EGYPT <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>ON TV EGYPT</li><li>ON TIME SPORTS 1-5</li><li>AL HAYAT 1-2</li><li>DMC</li><li>DMC DRAMA</li><li>CBC</li><li>CBC SOFRA</li><li>MAZIKA</li><li>NILE CINEMA</li><li>NILE SPORTS</li><li>ERTU 2</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | QATAR <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>QATAR TV HD</li><li>QATAR AL QURAN</li><li>ALKASS SPORTS 1-8</li><li>ALKASS ONE</li><li>ALKASS FIVE</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | KUWAIT <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>KUWAIT TV 1</li><li>KUWAIT TV 2</li><li>KUWAIT SPORT HD</li><li>KUWAIT PLUS</li><li>AL RAI TV</li><li>KOUT TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | OMAN <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>OMAN TV 1</li><li>OMAN TV 2</li><li>OMAN SPORTS</li><li>OMAN AL QURAN</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | BAHRAIN <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>BAHRAIN TV 1</li><li>BAHRAIN TV 2</li><li>BAHRAIN SPORTS 1-2</li><li>BAHRAIN AL QURAN</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | JORDAN <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>JRTV HD</li><li>JRTV SPORT</li><li>ROYA TV</li><li>ROYA NEWS</li><li>AL MAMLACKA</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | LEBANON <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>LBCI HD</li><li>MTV LEBANON</li><li>AL JADEED</li><li>AL MANAR</li><li>OTV</li><li>FUTURE TV</li><li>AL MAYADEEN</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | IRAQ <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>IRAQIYAH TV</li><li>AL SHARQIYA</li><li>AL SUMARIA</li><li>AL BAGHDADIA</li><li>ANN TV</li><li>KURDISTAN 24</li><li>NRT IRAQ</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | SYRIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>SYRIA TV</li><li>SYRIA DRAMA</li><li>SYRIA SPORT</li><li>AL DUNYA</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | YEMEN <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>YEMEN TV</li><li>YEMEN AL QAHEERA</li><li>YEMEN SHABAB</li><li>SUHAIL TV</li><li>AL MASIRAH</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | LIBYA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>LIBYA TV</li><li>LIBYA AL AHRAR</li><li>LIBYA CHANNEL</li><li>218 TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | TUNISIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>EL WATANIA 1</li><li>EL WATANIA 2</li><li>HANIBAL TV</li><li>NESMA TV</li><li>TUNISNA</li><li>ZITOUNA TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | ALGERIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>ENTV</li><li>CANAL ALGERIE</li><li>ALGERIE 3-6</li><li>ALGERIE SPORTS</li><li>ECHUROUK TV</li><li>ENNAHAR TV</li><li>BERBERE TV</li><li>NUMIDIA TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | MOROCCO <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>AL OULA HD</li><li>AL MAGHRIBIA</li><li>2M HD</li><li>2M MONDE</li><li>MEDI 1 TV</li><li>ARRIADIA SPORTS</li><li>CHADA TV</li><li>MASAA TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AR | SUDAN <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>SUDAN TV</li><li>SUDAN BLUE NILE</li><li>SUDAN SPORT</li><li>AL KHARTOUM</li><li>TAYBA TV</li></ul></div></div>
+      </div>
+    </div>
+    <div class="region-section active" id="region-africa">
+      <h2 class="text-xl font-bold text-white mb-4 mt-10 flex items-center gap-2">Africa <span class="count-badge" id="count-africa"></span></h2>
+      <div class="card overflow-hidden">
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AF | NIGERIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>NTA</li><li>NTA NEWS</li><li>AFRICAN MAGIC</li><li>AFRICAN MAGIC EPIC</li><li>AFRICAN MAGIC URBAN</li><li>AFRICAN MAGIC YORUBA</li><li>AFRICAN MAGIC IGBO</li><li>AFRICAN MAGIC HAUSA</li><li>AFRICAN MAGIC SHOWCASE</li><li>AFRICAN MAGIC REALITY</li><li>AFRICAN MAGIC LEGENDS</li><li>AFRICAN MAGIC FAMILY</li><li>AFRICAN MAGIC MOVIES</li><li>CHANNELS TV</li><li>ARISE TV</li><li>TVC NEWS</li><li>WAP TV</li><li>SOUNDCITY</li><li>AIT</li><li>BENUE TV</li><li>LAGOS TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AF | SOUTH AFRICA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>SABC 1 HD</li><li>SABC 2 HD</li><li>SABC 3 HD</li><li>E TV</li><li>MNET HD</li><li>KYKNET</li><li>DSTV CHANNEL</li><li>SUPERSPORT 1</li><li>SUPERSPORT 2</li><li>SUPERSPORT 3</li><li>SUPERSPORT 4</li><li>SUPERSPORT 5</li><li>SUPERSPORT 6</li><li>SUPERSPORT 7</li><li>SUPERSPORT 8</li><li>SUPERSPORT 9</li><li>SUPERSPORT 10</li><li>SUPERSPORT 11</li><li>SUPERSPORT 12</li><li>SUPERSPORT PREMIER LEAGUE</li><li>SUPERSPORT VARIETY 1-4</li><li>BBC EARTH</li><li>DISCOVERY</li><li>HISTORY</li><li>NAT GEO</li><li>MTV</li><li>COMEDY CENTRAL</li><li>CARTOON NETWORK</li><li>DISNEY</li><li>CNN</li><li>CNBC AFRICA</li><li>AL JAZEERA</li><li>SKY NEWS</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AF | GHANA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>GTV</li><li>TV3 GHANA</li><li>ADOM TV</li><li>UTV GHANA</li><li>NET 2 TV</li><li>JOY NEWS</li><li>METRO TV</li><li>ATLANTIC TV</li><li>Viasat 1</li><li>GH ONE TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AF | KENYA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>KBC HD</li><li>NTV KENYA</li><li>CITIZEN TV</li><li>KTN HOME</li><li>KTN NEWS</li><li>K24</li><li>KASS TV</li><li>BUKA TV</li><li>QTV</li><li>FAMILY TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AF | ETHIOPIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>ETV HD</li><li>ETV NEWS</li><li>ETV SPORT</li><li>FANA TV</li><li>KANA TV</li><li>WALTA TV</li><li>ARNA TV</li><li>ESAT</li><li>OMN MEDIA</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AF | TANZANIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>TBC 1</li><li>TBC 2</li><li>ITV TANZANIA</li><li>CHANNEL 10</li><li>STAR TV</li><li>EATV</li><li>AZAM TV SPORTS</li><li>AZAM TV PREMIUM</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AF | UGANDA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>UBC TV</li><li>NBS TV</li><li>BUKEDDE TV</li><li>PUNCH TV</li><li>STARZ TV</li><li>TOP TV</li><li>SANYUKA TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AF | ANGOLA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>TPA 1</li><li>TPA 2</li><li>TPA INTERNACIONAL</li><li>ZAP NOVELAS</li><li>ZAP FILMES</li><li>ZAP NET</li><li>BOM DIA TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AF | MOZAMBIQUE <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>TVM MOZAMBIQUE</li><li>STV MOZAMBIQUE</li><li>KTV MOZAMBIQUE</li><li>FILM ZONE</li><li>SUCCESO TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AF | SOMALIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>SNTV</li><li>UNIVERSAL TV</li><li>HORMOOD TV</li><li>SOMALI CHANNEL</li><li>MCT HD</li><li>KAALMO TV</li><li>VOA SOMALI</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AF | ZIMBABWE <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>ZBC TV</li><li>ZBC NEWS</li><li>BETV</li><li>3K TV</li><li>STAR FM TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AF | ZAMBIA <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>ZNBC TV 1</li><li>ZNBC TV 2</li><li>ZAMBEZI TV</li><li>COUNTRY TV</li><li>MUVI TV</li><li>LUSAKA TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AF | SENEGAL <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>RTS 1</li><li>RTS 2</li><li>2S TV</li><li>SEN TV</li><li>TFM</li><li>WALF TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AF | IVORY COAST <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>RTI 1</li><li>RTI 2</li><li>RTI 3</li><li>NCI</li><li>TV5 MONDE AFRIQUE</li><li>FREECAM TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AF | CAMEROON <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>CRTV</li><li>CRTV NEWS</li><li>STV CAMEROON</li><li>BALAFON TV</li><li>CAMEROON 24</li><li>VISION 4</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AF | DEMOCRATIC REPUBLIC OF CONGO <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>RTNC</li><li>RTNC2</li><li>RTGA</li><li>MIAM TV</li><li>B-ONE TV</li><li>TOP CONGO TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AF | MALAWI <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>MBC TV</li><li>MBC NEWS</li><li>ZODIAK TV</li><li>TIMVENI TV</li><li>CAPITAL TV</li></ul></div></div>
+        <div class="accordion-item"><div class="accordion-header" onclick="toggle(this)">AF | MAURITIUS <span class="icon">&#9660;</span></div><div class="accordion-body"><ul class="channel-list"><li>MBC 1</li><li>MBC 2</li><li>MBC 3</li><li>MBC SAT</li><li>MBC SPORTS</li></ul></div></div>
+      </div>
+    </div>
+</div>
+<a href="https://wa.me/447488842848?text=Hi%20StreamElite%20-%20I%20want%20to%20subscribe%20to%20see%20the%20full%20channel%20list" target="_blank" rel="noopener" class="whatsapp-float">
+  <svg fill="#fff" viewBox="0 0 24 24" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<footer class="border-t border-white/5 mt-10 py-8 text-center">
+  <p class="text-white/30 text-sm"> 2026 StreamElite. All rights reserved. | <a href="https://wa.me/447488842848" class="text-red-600 hover:underline">Contact via WhatsApp</a></p>
+</footer>
+<script>
+function toggle(el) { el.parentElement.classList.toggle('open'); }
+document.querySelectorAll('.region-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.region-btn').forEach(function(b) { b.classList.remove('active'); });
+    this.classList.add('active');
+    var region = this.getAttribute('data-region');
+    document.querySelectorAll('.region-section').forEach(function(s) {
+      if (region === 'all') { s.classList.add('active'); }
+      else { s.classList.toggle('active', s.id === 'region-' + region); }
+    });
+  });
+});
+document.getElementById('channelSearch').addEventListener('input', function() {
+  var q = this.value.toLowerCase().trim();
+  document.querySelectorAll('.accordion-item').forEach(function(item) {
+    var text = item.textContent.toLowerCase();
+    if (!q) { item.style.display = ''; }
+    else { item.style.display = text.indexOf(q) > -1 ? '' : 'none'; }
+  });
+});
+</script>
+</body>
+</html>
